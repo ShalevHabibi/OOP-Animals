@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+        public static void main(String[] args) {
+
+                Animals[] arr = new Animals[8];
+
+                Lion lionA = new Lion("Simba", 3);
+                Lion lionB = new Lion("Nala", 4);
+                Lion lionC = new Lion("haya", 5);
+
+                Dog dogA = new Dog("Rex", 3, "Bulldog", "Brown");
+                Dog dogB = new Dog("moshe", "Bulldog", "Brown");
+
+                Animals catA = new Cat("mitsi", 10, "black");
+
+                arr[0] = lionA;
+
+
+       System.out.println(lionA.getName());
+//        lionA.setName("Mufasa");
+//        System.out.println(lionA.getName());
+//
+//        lionA.MakeSound();
+//      int count = Lion.count;
+//        System.out.println(count);
+
+                dogA.sleep();
+                dogB.sleep();
+                lionA.sleep();
+                lionB.sleep();
+                lionA.eat();
+                System.out.println("the age of simba is: " + lionA.age);
+
+        }
+}
